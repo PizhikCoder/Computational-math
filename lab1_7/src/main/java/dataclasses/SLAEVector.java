@@ -22,4 +22,9 @@ public record SLAEVector(double[] values) {
         }
         return false;
     }
+
+    @Override
+    public int hashCode() {
+        return Arrays.hashCode(values);
+    }
 }
